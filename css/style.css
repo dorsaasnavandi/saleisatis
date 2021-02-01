@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: BNazanin, Tahoma;
+}
+
+.direct {
+    direction: rtl;
+    text-align: right;
+}
+.rtl{
+    direction: rtl;
+}
+.clear {
+    clear: both;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a, button {
+    outline: none;
+}
+
+.top-navbar {
+    z-index: 4;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid #ffe1a0;
+}
+
+.top-navbar ul {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 20px;
+    float: right;
+    padding-right: 20px;
+}
+
+.top-navbar ul li {
+    display: inline-block;
+    margin: 8px;
+    color: #ffe1a0;
+}
+
+.top-navbar ul li a {
+    font-size: 24px;
+    color: #ffe1a0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.top-navbar ul li a .text-nav {
+    font-size: 16px;
+}
+
+.top-navbar ul li a span {
+    display: block;
+}
+
+.top-navbar ul li a:hover span {
+    transition: 0.3s;
+    color: #7f6631;
+}
+
+.navbar-content {
+    padding: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.navbar-content img {
+    width: 100px;
+}
+
+.navbar-content-1 {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+.navbar-content-1 h2 {
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    font-size: 24px;
+    color: #ffe1a0;
+    display: inline-block;
+}
+
+.navbar-content-2 {
+    position: absolute;
+    width: 75px;
+    top: -10px;
+    left: 120px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 5px;
+    border-left: 1px solid #ffe1a0;
+}
+
+.navbar-content-2 h3 {
+    font-size: 16px;
+    color: #ffe1a0;
+}
+
+.nav-sticky {
+    position: fixed;
+    top: -200px;
+    width: 150px;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 6;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 70px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-sticky-active {
+    top: 0;
+}
+
+.nav-sticky ul li {
+    display: inline-block;
+}
+
+.nav-sticky ul li a span {
+    font-size: 20px;
+    color: #ffe1a0;
+    display: block;
+}
+
+.nav-sticky ul li a .text-nav {
+    font-size: 13px;
+    margin: 15px 5px 0 5px;
+}
+
+.nav-sticky ul li a:hover span {
+    color: #7f6631;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.0);
+    z-index: 8;
+    cursor: crosshair;
+}
+
+.menu-activaton {
+    visibility: visible;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu .side-menu {
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    box-sizing: border-box;
+    cursor: auto;
+}
+
+.closeMenu {
+    color: #eeeeee;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu .content-menu ul li {
+    text-align: center;
+    padding: 5px 0;
+    list-style-type: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu .content-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.menu .content-menu ul li:last-child a {
+    color: #ffe1a0;
+}
+
+.menu .content-menu ul li a {
+    color: #eeeeee;
+}
+
+.menu .content-menu ul li a:hover {
+    color: #ffe1a0;
+}
+
+.menu .sign-menu ul li {
+    text-align: center;
+    padding: 5px 0;
+    list-style-type: none;
+    color: #eeeeee;
+}
+
+.menu .sign-menu ul li p {
+    padding: 0 10px;
+}
+
+.menu .sign-menu ul li input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffe1a0;
+    color:;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu .sign-menu ul li input:first-child {
+    border-top: 1px solid #ffe1a0;
+}
+
+.menu .sign-menu ul li a span {
+    color: #ffe1a0;
+}
+
+.menu .sign-menu ul li button {
+    margin-top: 8px;
+    background-color: transparent;
+    border: 1px solid #ffe1a0;
+    color: #ffe1a0;
+    padding: 8px 15px;
+    outline: none;
+}
+
+.menu .sign-menu ul li button span:first-child {
+    float: left;
+    clear: left;
+}
+
+.menu .sign-menu ul li button span:last-child {
+    float: right;
+    clear: right;
+    margin-top: -5px;
+}
+
+.side-menu .header-menu {
+    padding: 10px 40px;
+}
+
+.space-menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    z-index: 9;
+}
+
+@media screen and (max-width: 720px) {
+    .navbar-content {
+        margin-left: 10px;
+    }
+
+    .top-navbar ul {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .navbar-content {
+        display: block;
+    }
+
+    .navbar-content {
+        display: none;
+    }
+
+    .top-navbar {
+        min-height: 50px;
+    }
+
+    .top-navbar ul {
+        float: none;
+        clear: both;
+        display: block;
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    .top-navbar ul li a {
+        font-size: 16px;
+    }
+
+    .top-navbar ul li a .text-nav {
+        font-size: 12px;
+    }
+}
+.title-page{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color:#7f6631;
+}
+.divider{
+    border-bottom: 1px solid #c6c8ca;
+    width: 250px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.divider-diamond {
+    border: 2px solid #ffe1a0;
+    background-color: #7f6631;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.divider-square1 {
+    border: 3px solid #7f6631;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+}
+
+.divider-square2 {
+    border: 3px solid #7f6631;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+/*start style of sale-buy-rent*/
+
+/*style of father's all home-posts)*/
+.all-homes {
+    margin: 30px 0;
+}
+/*style of father's sidebar*/
+.side-box {
+    margin: 30px 0;
+}
+/*style of box whith border for home-posts*/
+.box-house {
+    height: auto;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    overflow: hidden;
+}
+.box-house figcaption{
+    margin-bottom: -15px;
+}
+/* space top */
+.house{
+    margin-top: 30px;
+}
+/*style of img-home-posts*/
+.house img {
+    width: 100%;
+}
+/*style of bedrooms-size-parking of home*/
+.right-home {
+    width: 50%;
+    height: auto;
+    float: right;
+    border-left: 1px solid #eee;
+}
+/*style of location's home*/
+.left-home {
+    width: 50%;
+    height: 112px;
+    float: left;
+    font-size: 20px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+/*style of services home*/
+.detail {
+    text-align: right;
+    margin-right: 5px;
+    margin-top: -7px;
+    display: block;
+    font-size: 16px;
+}
+.detailLeft{
+    box-sizing: border-box;
+    font-size: 15px;
+    padding-top: 45px;
+}
+/*style of icon's home*/
+.detail .fa {
+    margin-left: 3px;
+}
+.detailLeft .fa{
+    margin-left: 5px;
+}
+/*style of emkanat word*/
+.services-home {
+    font-size: 20px;
+    color: #daad86;
+    margin-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: block;
+    text-align: right;
+}
+/* style of cost's home*/
+.cost {
+    text-align: center;
+    direction: rtl;
+    font-size: 15px;
+}
+/* style of father's button*/
+.button-class {
+    text-align: center;
+}
+/*style of etelaate bishtar button*/
+.house button {
+    border: none;
+    padding: 0 4px;
+    border-radius: 4px;
+    background-color: transparent;
+    color:#daad86;
+    cursor: pointer;
+    text-align: right;
+    margin-left: auto;
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+/*style of etelaate bishtar button when it's hover*/
+.button-class :hover {
+    background-color: #7f6631;
+    transition: 0.5s;
+    color:white;
+
+}
+
+/*start style of sidebar*/
+
+/*style of search-word*/
+.search-word {
+    text-align: right;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    color:dimgray;
+}
+/*style of search-icon*/
+.search-icon {
+    margin-left: 10px;
+
+}
+/*style of location-search*/
+.loc-search {
+    width: 100%;
+    height: 25px;
+    margin-top:10px;
+    border: 1px solid #ccc;
+    direction: rtl;
+    padding-right: 10px;
+}
+/*style of buttons of filter*/
+.dropbtn{
+    width:100%;
+    height:auto;
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    position: relative;
+    cursor: pointer;
+    float:left;
+    margin-right: 20px;
+}
+/*style of dropdown-content*/
+.dropdown-content{
+    width:100%;
+    height:auto;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 2%;
+    box-sizing: border-box;
+    display:none;
+}
+/*style of dropdown-content when they are hover*/
+.dropdown-content :hover{
+  background-color: red;
+}
+/*style of point in all buttons*/
+.point {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color:#ccc;
+    border: 1px solid gray;
+}
+/*style of point in cost and buy buttons*/
+.point1{
+    width: 20%;
+}
+/*style of point in model of home*/
+.point2{
+    width:10%;
+}
+/*style of find button in filter*/
+.find-btn{
+    width: 100%;
+    margin-top: 20px;
+    background-color:#daad86;
+    border: none;
+    border-radius:20px;
+    cursor: pointer;
+}
+/*style of text in find button*/
+.find-text{
+   margin:2px 0;
+}
+
+/*start hot requests*/
+
+/*style of hot-requests-word*/
+.hot-word{
+    width: 100%;
+    margin-top:50px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align: right;
+}
+/*style of line under hot-requests-word*/
+.line{
+    width: 100%;
+    background-color:#daad86;
+    height: 1px;
+    margin-top: 20px;
+}
+/*style of hot-requests-img box(it's father's imgs)*/
+.hot-img{
+    margin-top: 20px;
+}
+/*style of hot-request-img*/
+.hot-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+/*style of hot-requests-text*/
+.center-text{
+   text-align: center;
+
+
+}
+.hot-text{
+    margin:40px -20px;
+}
+@media all and (max-width:992px){
+  .hot-text{
+    margin-top:20px;
+  }
+  .hot-img img{
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border:1px solid #e0e0e0;
+  }
+}
+/*style of hot-resuests-location*/
+.hot-loc{
+    color: red;
+    font-size: 15px;
+    margin-top:10px;
+}
+/*style of hot-resuests-location when it's hover*/
+.hot-loc:hover{
+    color:black;
+}
+/*style of hot-requests-cost*/
+.hot-cost{
+    font-size: 14px;
+}
+.btn-request{
+  display: none;
+  width:100%;
+  height:30px;
+  border:1px solid red;
+  float: left;
+  color: red !important;
+  margin-bottom: 40px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 3px;
+
+}
+.btn-request:hover{
+  background-color: red;
+  color:white !important;
+  transition: 0.8s;
+}
+@media  screen and (max-width:760px){
+  .hot-word , .hot-img , .hot-text , .hot-cost , .line{
+    display: none;
+  }
+  .btn-request{
+    display: block;
+  }
+  .search-box , .dropdownn , .find-btn{
+    display: none;
+  }
+
+}
+
+
+.bg-footer {
+    background: url("../img/bg.jpg") repeat;
+    padding: 20px 0;
+}
+
+.footer-header {
+    color: #eeeeee;
+    font-size: 20px;
+}
+
+.footer-divider {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 5px auto;
+}
+
+.inner-page ul li a {
+    color: #ffe1a0;
+    list-style-type: none;
+    font-size: 16px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.inner-page ul li a:hover {
+    padding: 4px;
+    color: #f0f0f0;
+}
+
+.social-network ul {
+    padding: 5px 0;
+}
+
+.social-network ul li a {
+    font-size: 16px;
+    color: #ffe1a0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-network ul li a:hover {
+    color: #f0f0f0;
+}
+
+.social-network ul li a span {
+    font-size: 20px;
+    color: #ffe1a0;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.social-network ul li a:hover span {
+    color: #f0f0f0;
+    font-size: 22px;
+}
+
+.info-us p {
+    color: #c6c8ca;
+    font-size: 18px;
+}
+
+.info-us ul li span, .info-us ul li {
+    color: #c6c8ca;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.info-us address {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.footer-logo img {
+    width: 100%;
+    max-height: 200px;
+}
+
+.info-us a {
+    margin-right: 5px;
+    color: #c6c8ca;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.info-us a:hover {
+    color: #ffe1a0;
+}
+
+/* Font */
+@font-face {
+    font-family: 'BNazanin';
+    src: url('../fonts/BNazanin.eot?#') format('eot'), /* IE6â€“8 */ url('../fonts/BNazanin.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/BNazanin.ttf') format('truetype');  /* Saf3â€”5, Chrome4+, FF3.5, Opera 10+ */
+}
